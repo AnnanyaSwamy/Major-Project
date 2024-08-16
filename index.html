@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stress Predictor</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Stress Level Predictor</h1>
-        <form id="stressForm">
-            <label for="sr">Snoring Rate:</label>
-            <input type="number" id="sr" name="sr" step="0.01" required>
+        <div class="panel prediction-panel">
+            <h1>Stress Level Predictor</h1>
+            <form id="stressForm">
+                <label for="sr">Snoring Rate:</label>
+                <input type="number" id="sr" name="sr" step="0.01" required>
 
-            <label for="rr">Respiration Rate:</label>
-            <input type="number" id="rr" name="rr" step="0.01" required>
+                <label for="rr">Respiration Rate:</label>
+                <input type="number" id="rr" name="rr" step="0.01" required>
 
-            <label for="t">Body Temperature:</label>
-            <input type="number" id="t" name="t" step="0.01" required>
+                <label for="t">Body Temperature:</label>
+                <input type="number" id="t" name="t" step="0.01" required>
 
-            <label for="lm">Limb Movement:</label>
-            <input type="number" id="lm" name="lm" step="0.01" required>
+                <label for="lm">Limb Movement:</label>
+                <input type="number" id="lm" name="lm" step="0.01" required>
 
-            <label for="bo">Blood Oxygen:</label>
-            <input type="number" id="bo" name="bo" step="0.01" required>
+                <label for="bo">Blood Oxygen:</label>
+                <input type="number" id="bo" name="bo" step="0.01" required>
 
-            <label for="rem">Eye Movement:</label>
-            <input type="number" id="rem" name="rem" step="0.01" required>
+                <label for="rem">Eye Movement:</label>
+                <input type="number" id="rem" name="rem" step="0.01" required>
 
-            <label for="sh">Sleeping Hours:</label>
-            <input type="number" id="sh" name="sh" step="0.01" required>
+                <label for="sh">Sleeping Hours:</label>
+                <input type="number" id="sh" name="sh" step="0.01" required>
 
-            <label for="hr">Heart Rate:</label>
-            <input type="number" id="hr" name="hr" step="0.01" required>
+                <label for="hr">Heart Rate:</label>
+                <input type="number" id="hr" name="hr" step="0.01" required>
 
-            <button type="submit">Predict Stress Level</button>
-        </form>
+                <button type="submit">Predict Stress Level</button>
+            </form>
 
-        <div id="result"></div>
+            <div id="result"></div>
+        </div>
+
+        <div class="panel info-panel">
+            <h1>Legal Values & Stress Levels</h1>
+            <ul>
+                <li>Snoring Rate: 0 - 20</li>
+                <li>Respiration Rate: 12 - 20 breaths/min</li>
+                <li>Body Temperature: 36.5 - 37.5°C</li>
+                <li>Limb Movement: 0 - 10</li>
+                <li>Blood Oxygen: 95 - 100%</li>
+                <li>Eye Movement: 0 - 30</li>
+                <li>Sleeping Hours: 6 - 9 hours</li>
+                <li>Heart Rate: 60 - 100 bpm</li>
+            </ul>
+            <p>Stress Levels:</p>
+            <ul>
+                <li>Not Stressed: Normal Range</li>
+                <li>Stressed: Slightly above Normal Range</li>
+                <li>Overly Stressed: Well above Normal Range</li>
+            </ul>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
