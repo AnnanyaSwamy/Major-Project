@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stress Level Predictor</h1>
+        <form id="stressForm">
+            <label for="sr">Snoring Rate:</label>
+            <input type="number" id="sr" name="sr" step="0.01" required>
+
+            <label for="rr">Respiration Rate:</label>
+            <input type="number" id="rr" name="rr" step="0.01" required>
+
+            <label for="t">Body Temperature:</label>
+            <input type="number" id="t" name="t" step="0.01" required>
+
+            <label for="lm">Limb Movement:</label>
+            <input type="number" id="lm" name="lm" step="0.01" required>
+
+            <label for="bo">Blood Oxygen:</label>
+            <input type="number" id="bo" name="bo" step="0.01" required>
+
+            <label for="rem">Eye Movement:</label>
+            <input type="number" id="rem" name="rem" step="0.01" required>
+
+            <label for="sh">Sleeping Hours:</label>
+            <input type="number" id="sh" name="sh" step="0.01" required>
+
+            <label for="hr">Heart Rate:</label>
+            <input type="number" id="hr" name="hr" step="0.01" required>
+
+            <button type="submit">Predict Stress Level</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
