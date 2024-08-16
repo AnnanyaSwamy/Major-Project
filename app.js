@@ -31,8 +31,9 @@ document.getElementById('stressForm').addEventListener('submit', function(event)
         }
 
         document.getElementById('result').innerHTML = `
-            <p>Predicted Stress Level: ${data.predicted_stress_level.toFixed(2)}</p>
-            <p>Stress Category: ${categoryText}</p>
+            <h2 style="color:#2A9DF4">Results:</h2>
+            <p style="color:#2A9DF4"><strong>Predicted Stress Level:</strong> ${data.predicted_stress_level.toFixed(2)}</p>
+            <p style="color:#2A9DF4"><strong>Stress Category:</strong> ${categoryText}</p>
         `;
     })
     .catch(error => console.error('Error:', error));
