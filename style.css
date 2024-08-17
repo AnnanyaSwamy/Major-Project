@@ -1,92 +1,3 @@
-/* body {
-    font-family: "Poppins", sans-serif;
-    background-color: #E3FDFD;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    gap: 20px;
-}
-
-.panel {
-    background-color: #CBF1F5;
-    border-radius: 10px;
-    padding: 20px;
-    width: 350px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-}
-
-.panel:hover {
-    transform: translateY(-5px);
-}
-
-.prediction-panel {
-    background-color: #A6E3E9;
-}
-
-.info-panel {
-    background-color: #71C9CE;
-}
-
-h1 {
-    font-size: 24px;
-    color: #333;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-    color: #333;
-}
-
-input[type="number"] {
-    width: 95%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #71C9CE;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #5AB1B8;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-p {
-    margin: 10px 0;
-    color: #333;
-} */
-/*//////////////////////////////////////////////////////////*/
 body {
     font-family: "Poppins", sans-serif;
     background-color: bisque;
@@ -101,15 +12,28 @@ body {
 .container {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.container.shifted {
+    justify-content: space-between;
 }
 
 .panel {
     background-color: #4F1787;
     border-radius: 10px;
     padding: 20px;
-    width: 350px;
+    width: 400px;
+    height: 800px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .panel:hover {
@@ -124,27 +48,43 @@ body {
     background-color: #FB773C;
 }
 
-h1 {
+.result-panel {
+    background-color: #EB3678;
+    border-radius: 10px;
+    padding: 0px 20px 20px 20px;
+    width: 400px;
+    height: 800px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    box-sizing: border-box;
+}
+
+.result-panel>h3 {
+        font-size: 24px;
+        color: #E3FDFD;
+}
+
+h1, h3 {
     font-size: 24px;
     color: #E3FDFD;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
+label, li, p {
     color: #E3FDFD;
 }
 
 input[type="number"] {
-    width: 95%;
+    width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 button {
+    margin: 15px 0px 0px 0px;
     width: 100%;
     padding: 10px;
     background-color: #FB773C;
@@ -155,6 +95,7 @@ button {
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -164,212 +105,14 @@ button:hover {
 ul {
     list-style-type: none;
     padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-    color: #E3FDFD;
-}
-
-p {
-    margin: 10px 0;
-    color: #E3FDFD;
-} 
-
-h3{
-    color: white;
-}
-
-/*////////////////////////////////////////////////////////*/
-
-
-/* body {
-    font-family: "Poppins", sans-serif;
-    background-color: #060047; 
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    gap: 20px;
-}
-
-.panel {
-    background-color: #E90064;
-    border-radius: 10px;
-    padding: 20px;
-    width: 350px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-}
-
-.panel:hover {
-    transform: translateY(-5px);
-}
-
-.prediction-panel {
-    background-color: #FF5F9E; 
-}
-
-.info-panel {
-    background-color: #E90064;
-}
-
-h1 {
-    font-size: 24px;
-    color: #FF5F9E; 
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-    color: #E90064; 
-}
-
-input[type="number"] {
-    width: 95%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #FF5F9E; 
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #E90064; 
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 li {
     margin-bottom: 10px;
-    color: #FF5F9E; 
 }
 
 p {
     margin: 10px 0;
-    color: #FF5F9E; 
 }
-
-.dark-heading{
-    color: #E90064;
-}
-/* *********************************************************** */
-/* body {
-    font-family: "Poppins", sans-serif;
-    background-color: #050C9C; 
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    gap: 20px;
-}
-
-.panel {
-    background-color: #3572EF; 
-    border-radius: 10px;
-    padding: 20px;
-    width: 350px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-}
-
-.panel:hover {
-    transform: translateY(-5px);
-}
-
-.prediction-panel {
-    background-color: #3ABEF9; 
-}
-
-.info-panel {
-    background-color: #A7E6FF; 
-    color: #2A9DF4; 
-}
-
-h1 {
-    font-size: 24px;
-    color: #A7E6FF; 
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-    color: #A7E6FF; 
-}
-
-input[type="number"] {
-    width: 95%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #3ABEF9;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #2A9DF4; 
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-    color: #2A9DF4; 
-}
-
-p {
-    margin: 10px 0;
-    color: #A7E6FF; 
-}
-
-.dark-heading{
-    color: #2A9DF4;
-}
-
-#result{
-    color: #2A9DF4 !important;
-} */
