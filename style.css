@@ -87,9 +87,9 @@ p {
     color: #333;
 } */
 /*//////////////////////////////////////////////////////////*/
-/* body {
+body {
     font-family: "Poppins", sans-serif;
-    background-color: #180161;
+    background-color: bisque;
     margin: 0;
     padding: 0;
     display: flex;
@@ -174,7 +174,12 @@ li {
 p {
     margin: 10px 0;
     color: #E3FDFD;
-} */
+} 
+
+h3{
+    color: white;
+}
+
 /*////////////////////////////////////////////////////////*/
 
 
@@ -269,11 +274,11 @@ p {
 
 .dark-heading{
     color: #E90064;
-} */
+}
 /* *********************************************************** */
-body {
+/* body {
     font-family: "Poppins", sans-serif;
-    background-color: #050C9C; /* Dark Blue */
+    background-color: #050C9C; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -288,7 +293,7 @@ body {
 }
 
 .panel {
-    background-color: #3572EF; /* Blue */
+    background-color: #3572EF; 
     border-radius: 10px;
     padding: 20px;
     width: 350px;
@@ -301,23 +306,23 @@ body {
 }
 
 .prediction-panel {
-    background-color: #3ABEF9; /* Light Blue */
+    background-color: #3ABEF9; 
 }
 
 .info-panel {
-    background-color: #A7E6FF; /* Very Light Blue */
-    color: #2A9DF4; /* Dark Blue for text */
+    background-color: #A7E6FF; 
+    color: #2A9DF4; 
 }
 
 h1 {
     font-size: 24px;
-    color: #A7E6FF; /* Very Light Blue */
+    color: #A7E6FF; 
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
-    color: #A7E6FF; /* Very Light Blue */
+    color: #A7E6FF; 
 }
 
 input[type="number"] {
@@ -332,7 +337,7 @@ input[type="number"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #3ABEF9; /* Light Blue */
+    background-color: #3ABEF9;
     border: none;
     border-radius: 5px;
     color: white;
@@ -343,7 +348,7 @@ button {
 }
 
 button:hover {
-    background-color: #2A9DF4; /* Darker Light Blue */
+    background-color: #2A9DF4; 
 }
 
 ul {
@@ -353,12 +358,12 @@ ul {
 
 li {
     margin-bottom: 10px;
-    color: #2A9DF4; /* Very Light Blue */
+    color: #2A9DF4; 
 }
 
 p {
     margin: 10px 0;
-    color: #A7E6FF; /* Very Light Blue */
+    color: #A7E6FF; 
 }
 
 .dark-heading{
@@ -367,4 +372,4 @@ p {
 
 #result{
     color: #2A9DF4 !important;
-}
+} */
