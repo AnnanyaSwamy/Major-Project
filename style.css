@@ -28,7 +28,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     width: 400px;
-    height: 800px;
+    height: 750px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
     display: flex;
@@ -51,15 +51,20 @@ body {
 .result-panel {
     background-color: #EB3678;
     border-radius: 10px;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
     width: 400px;
-    height: 800px;
+    height: 750px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     box-sizing: border-box;
 }
 
+.result-panel>*{
+    margin: 10px;
+}
+
 .result-panel>h3 {
+        margin-top: 20px;
         font-size: 24px;
         color: #E3FDFD;
 }
@@ -115,4 +120,115 @@ li {
 
 p {
     margin: 10px 0;
+}
+
+
+/* Navbar styles */
+.navbar {
+    background-color: #EB3678;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #E3FDFD;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li {
+    display: inline;
+}
+
+.navbar-menu a {
+    color: #E3FDFD;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #FB773C;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #EB3678;
+    color: #E3FDFD;
+    padding: 5px 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #E3FDFD;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FB773C;
+}
+
+
+.footer-container>p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-container>a{
+    margin-left: 10px;
+}
+
+.navbar-container>ul{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.footer>.footer-container{
+    margin-left: 10px;
+}
+
+.footer-container>ul{
+    margin-top: 5px;
+    margin-right: 10px;
 }
