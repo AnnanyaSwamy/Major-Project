@@ -8,6 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(45deg, #EB3678, #fce38a);
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* Navbar styles */

@@ -7,6 +7,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(45deg, #fce38a, #EB3678);
+    color: #E3FDFD;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .container {
